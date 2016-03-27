@@ -25,7 +25,7 @@ class Client implements HttpClient
      */
     public function get($url, array $options = [])
     {
-        return $this->client->get($url, $options)->json();
+        return $this->client->get($url, $options);
     }
 
     /**
@@ -35,7 +35,7 @@ class Client implements HttpClient
      */
     public function post($url, array $options = [])
     {
-        return $this->client->post($url, $options)->json();
+        return $this->client->post($url, $options);
     }
 
     /**
@@ -45,7 +45,7 @@ class Client implements HttpClient
      */
     public function put($url, array $options = [])
     {
-        return $this->client->put($url, $options)->json();
+        return $this->client->put($url, $options);
     }
 
     /**
@@ -55,6 +55,6 @@ class Client implements HttpClient
      */
     public function delete($url, array $options = [])
     {
-        return $this->client->delete($url, $options)->json();
+        return $this->client->delete($url, $options);
     }
 }
